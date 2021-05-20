@@ -5,6 +5,8 @@ object ExamenBigData {
   def main(args: Array[String]): Unit = {
     listeValeurs (List("Julien", "Paul", "Jean", "rac", "trec", "joel", "ed", "chris", "maurice"))
 
+    list_double ()
+
   }
 
   def listeValeurs (listText : List[String]) : List[String] = {
@@ -18,6 +20,9 @@ object ExamenBigData {
       List("https://www.zatsaz.com/", ""), List("https://www.larevenu.com/", ""), List("https://www.cadre-dirigfdeant-magazine.com/", "Payant"),
       List("https://www.silicon.fr/nous-contacter/", "Payant"), List ("https://www.itespresso.fr", ""), List ("https://www.industrie-mag.com/article4.html", "invité"),
       List ("https://www.sjesuisundev.com/article-invite/",  "invité"), List ("https://www.numerama.com", ""))
+
+    val liste2 : List[List[String]] = liste.map(l => l)
+    liste2.foreach(l => println(l))
 
   }
 
