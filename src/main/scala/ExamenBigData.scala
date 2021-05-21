@@ -16,12 +16,12 @@ object ExamenBigData {
 
   def list_double () : Unit = {
 
-    val liste : List[List[String]] = List(List("ecommercemag.fr", ""), List("https://www.journalducm.com/contact/" , "Payant"),
-      List("https://www.zatsaz.com/", ""), List("https://www.larevenu.com/", ""), List("https://www.cadre-dirigfdeant-magazine.com/", "Payant"),
-      List("https://www.silicon.fr/nous-contacter/", "Payant"), List ("https://www.itespresso.fr", ""), List ("https://www.industrie-mag.com/article4.html", "invité"),
-      List ("https://www.sjesuisundev.com/article-invite/",  "invité"), List ("https://www.numerama.com", ""))
+    val liste : List[(String, String)] = List(("ecommercemag.fr", ""), ("https://www.journalducm.com/contact/" , "Payant"),
+      ("https://www.zatsaz.com/", ""), ("https://www.larevenu.com/", ""), ("https://www.cadre-dirigfdeant-magazine.com/", "Payant"),
+      ("https://www.silicon.fr/nous-contacter/", "Payant"), ("https://www.itespresso.fr", ""), ("https://www.industrie-mag.com/article4.html", "invité"),
+      ("https://www.sjesuisundev.com/article-invite/",  "invité"), ("https://www.numerama.com", ""))
 
-    val liste2 : List[List[String]] = liste.map(l => l)
+    val liste2 : List[(String, String)] = liste.map(l => l)
     liste2.foreach(l => println(l))
 
   }
